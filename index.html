@@ -34,9 +34,9 @@
 
         <h3>Experience & Skills Section</h3>
 
-        <section id="exp table">
+        <section id="exptable">
             <div>
-                <table width="500">
+                <table>
                     <caption>Skills table</caption>
                     <colgroup>
                         <col span="1" title="programLanguage">
@@ -59,12 +59,23 @@
         </section>
 
         <h3>Work experience</h3>
-        <section id="work exp">
-            
+        <section id="workexp">
+            <details>
+                <summary>KIPP Foundation</summary>
+                <p>Designed a 20-page handbook for KIPP national micro-grant scholarship ($500-$2000) on Canva to detail application process, eligibility, and FAQ’s for high school students, enhancing information centralization and accessibility.
+                Created 4 scenario case-studies to show potential uses for the grant for students, integrating weekly feedback from supervisor, +1000 surveyed students, and ~150 staff members focused on content visuals and understandable.
+                </p>
+              </details>
         </section>
 
         
-        <h3>Questions?</h3>
+        <h3>Let's connect?</h3>
+        <form>
+            <p><label>Feel free to leave your inquires here.</label></p>
+            <textarea></textarea>
+            <br>
+            <button type="button" onclick="alert('Your response was recorded!')">Submit</button>
+        </form>
 
         <h3>Labs</h3>
         <section>
@@ -82,18 +93,18 @@
             </script>
 
             <picture>
-                <img src="/Images/painting.png" alt="Very Good Painting">
+                <img src="Images/painting.png" alt="Very Good Painting">
             </picture>
 
             <figure>
-                <img src="/Images/painting.png" alt="Very Good Painting">
+                <img src="Images/painting.png" alt="Very Good Painting">
                 <figcaption><pre>Cover picture of a song from my spotify playlist</pre></figcaption>
             </figure>
 
             <iframe src="https://www.google.com" title="the best search engine"></iframe>
             <!--work on this later-->
             <audio>
-                    <source controls src = "/Videos/jazz.mp3" >
+                    <source src = "/Videos/jazz.mp3" >
                     Your browser does not support the audio tag.
             </audio>
 
@@ -106,8 +117,10 @@
             </svg>
 
             <form>
-                <label>Choose your favorite drink</label>
-                <select>
+                <fieldset>
+                    <legend>What's Your Favorite Drink</legend>
+                    <label>Choose your favorite drink</label>
+                    <select>
                     <optgroup label="Asian drinks">
                         <option>Boba</option>
                         <option>Matcha Latte</option>
@@ -116,9 +129,16 @@
                         <option>Coke</option>
                         <option>Sprite</option>
                     </optgroup>
-                </select>
-                <input type="submit" value="Submit">
+                    </select>
+                    <input type="submit" value="Submit">
+                </fieldset>
             </form>
+
+            <template>
+            <h2>Jim</h2>
+            <img src="Images/jim.jpg" width="200" height="200">
+            </template>
+
         </section>
 
         <aside class="aboutMe">
@@ -141,6 +161,18 @@
                 <li><strong>Manitoba, Eric</strong></li>
                 <li><strong>The Way Life Goes, Lil Uzi Vert</strong></li>
             </ol>
+
+            <form>
+                <label>Choose your favorite genre of music from this list</label>
+                <input list="genre">
+                <datalist id="genre">
+                    <option value="Hip Hop"></option>
+                    <option value="Rap"></option>
+                    <option value="R&B"></option>
+                    <option value="Country"></option>
+                </datalist>
+                <input type="submit" value="Submit">
+            </form>
             <p><code>Top 3 Movies/TV shows of all time</code></p>
             <ol>
                 <li>Breaking bad</li>
