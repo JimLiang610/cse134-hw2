@@ -4,9 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="Images/painting.png" rel="icon"/>
+    <title>Jim Liang</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
+    <style>
+        section {
+          border: 2px solid cyan;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Jim's Portfolio</h1>
+
+        <section id="intro">
+            <div id="jimIntro">
+                <h2>Hi,<br> I'm <span style="color:blue">Jim.</span> <br>I'm a programmer.</h2>
+                <h2>I program in Java & Python</h2>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <h3>Experience & Skills Section</h3>
+
+        <section id="exp table">
+            <div>
+                <table width="500">
+                    <caption>Skills table</caption>
+                    <colgroup>
+                        <col span="1" title="programLanguage">
+                        <col span="1" title="technologies">
+                    </colgroup>
+                    <tr>
+                        <th>Programming Languages</th>
+                        <th>Technologies </th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Tkinter</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Selenium</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <h3>Work experience</h3>
+        <section id="work exp">
+            
+        </section>
+
+        
+        <h3>Questions?</h3>
+
+        <h3>Labs</h3>
+        <section>
+            <nav>
+                <a href="https://www.youtube.com/">Youtube</a>
+            </nav>
+
+            <canvas id="myCan">Your browser does not support the canvas tag.</canvas>
+
+            <script>
+            var c = document.getElementById("myCan");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "HHHHHH";
+            ctx.fillRect(100, 50, 50, 100);
+            </script>
+
+            <picture>
+                <img src="/Images/painting.png" alt="Very Good Painting">
+            </picture>
+
+            <figure>
+                <img src="/Images/painting.png" alt="Very Good Painting">
+                <figcaption><pre>Cover picture of a song from my spotify playlist</pre></figcaption>
+            </figure>
+
+            <iframe src="https://www.google.com" title="the best search engine"></iframe>
+            <!--work on this later-->
+            <audio>
+                    <source controls src = "/Videos/jazz.mp3" >
+                    Your browser does not support the audio tag.
+            </audio>
+
+            <video>
+
+            </video>
+
+            <svg height="210" width="500">
+                <line x1="0" y1="0" x2="10000" y2="0" style="stroke:red;stroke-width:10" />
+            </svg>
+
+            <form>
+                <label>Choose your favorite drink</label>
+                <select>
+                    <optgroup label="Asian drinks">
+                        <option>Boba</option>
+                        <option>Matcha Latte</option>
+                    </optgroup>
+                    <optgroup label="Soda">
+                        <option>Coke</option>
+                        <option>Sprite</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <aside class="aboutMe">
+            <p>Hobbies and Interests:</p>
+            <p><b>Favorite drinks:</b></p>
+            <ul>
+                <li>matcha</li>
+                <li>boba</li>
+                <li>coffee</li>
+            </ul>
+            <p><i>Hobbies:</i></p>
+            <ul>
+                <li>Gymm</li>
+                <li>Music</li>
+                <li>Movies/TV shows</li>
+            </ul>
+            <p><em>Top 3 songs of all time:</em></p>
+            <ol>
+                <li><strong>In My City, MBNel</strong></li>
+                <li><strong>Manitoba, Eric</strong></li>
+                <li><strong>The Way Life Goes, Lil Uzi Vert</strong></li>
+            </ol>
+            <p><code>Top 3 Movies/TV shows of all time</code></p>
+            <ol>
+                <li>Breaking bad</li>
+                <li>Two and a Half Man</li>
+                <li>Family Guy</li>
+            </ol>
+        </aside>
+
+        
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Site produced by prettyboyjay.</p>
+    </footer>
 </body>
+
 </html>
